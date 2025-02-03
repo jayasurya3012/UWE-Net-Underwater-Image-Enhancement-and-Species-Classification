@@ -32,6 +32,7 @@ attention weights. These weights are then combined through convolutional operati
 applied to the original features, enabling the network to adaptively highlight crucial spatial 
 regions. Given an Intermediate Feature map 'F', CBAM sequentially infers a 1D channel attention
 map Mc, and a 2D spatial attention map Ms, then it can be summarized as, 
+
   ![image](https://github.com/user-attachments/assets/5b26567a-be34-4510-8405-0279f77ff684)
 
 We present the composite fusion model, a novel architecture for classifying underwater 
@@ -40,7 +41,9 @@ EfficientNetB5. Through the use of epoch-wise monitoring, we create ImproveCall,
 effectively trains our architecture. This section will first discuss our recommended 
 architectural design procedure, then our new training approach and any necessary data 
 processing.
+
        ![image](https://github.com/user-attachments/assets/c2b80c60-f11d-4bd0-8473-ba763e934bc3)
+
 To utilize the available VRAM and memory, we need the model to converge in the global 
 minima without wasteful utilisation of memory and time. We had to develop a specific 
 dynamic control training approach allowing us to interactively influence the training 
@@ -57,6 +60,7 @@ Algorithm : ImproveCall
 Input: Threshold, Factor, Patience, and (Learning_rate : lr, accuracy : acc), val_accuracy : 
 v_acc, loss : loss, val_loss : v_loss)) known to function at each epoch by the model. 
 Output: Production of best weights for the model 
+
 if acc < threshold: 
       monitor = 'accuracy' 
 if epoch == 0: 
