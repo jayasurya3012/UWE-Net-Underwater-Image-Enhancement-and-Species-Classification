@@ -34,6 +34,7 @@ regions. Given an Intermediate Feature map 'F', CBAM sequentially infers a 1D ch
 map Mc, and a 2D spatial attention map Ms, then it can be summarized as, 
   ![image](https://github.com/user-attachments/assets/5b26567a-be34-4510-8405-0279f77ff684)
 
+## Composite Fusion model for Classification:
 We present the composite fusion model, a novel architecture for classifying underwater 
 species that integrates the properties of two pre-trained models: InceptionV3 and 
 EfficientNetB5. Through the use of epoch-wise monitoring, we create ImproveCall, which 
@@ -42,6 +43,7 @@ architectural design procedure, then our new training approach and any necessary
 processing.
        ![image](https://github.com/user-attachments/assets/c2b80c60-f11d-4bd0-8473-ba763e934bc3)
 
+## Training Algorithm:
 To utilize the available VRAM and memory, we need the model to converge in the global 
 minima without wasteful utilisation of memory and time. We had to develop a specific 
 dynamic control training approach allowing us to interactively influence the training 
@@ -123,3 +125,9 @@ else:
                                  ans = int(ans) 
                                  ask_epoch += ans
 ```
+## Output from UWENET:
+![image](https://github.com/user-attachments/assets/70702a65-4964-4054-a4f8-8141556c475b)
+
+## Output from Composite Fusion model without and with enhancement:
+![image](https://github.com/user-attachments/assets/bfd030ea-8382-4073-a3e3-2a64f2f880a7)
+
