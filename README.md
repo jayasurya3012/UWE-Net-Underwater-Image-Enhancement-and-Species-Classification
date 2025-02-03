@@ -132,4 +132,20 @@ else:
 ## Output from Composite Fusion model without and with enhancement:
 ![image](https://github.com/user-attachments/assets/bfd030ea-8382-4073-a3e3-2a64f2f880a7)
 
+## Implementation:
+1. Please ensure that these packages are installed
+Tensorflow == 2.13.0
+
+2. Change the paths to load any models given along with respect to your file location.
+
+3. The dataset links are given below:
+
+For Enhancement
+ a) https://www.kaggle.com/datasets/larjeck/uieb-dataset-raw
+ b) https://www.kaggle.com/datasets/larjeck/uieb-dataset-reference
+
+For classification
+ a) https://www.kaggle.com/datasets/vencerlanz09/sea-animals-image-dataste
+
+
 </div>
