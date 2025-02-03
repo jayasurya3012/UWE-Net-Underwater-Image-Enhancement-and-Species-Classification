@@ -1,4 +1,5 @@
 # UWE-Net for Underwater Image Enhancement and Composite Fusion model for Species Classification
+<div align="justify"> 
 We introduce UnderWaterEnhanceNetwork (UWE-Net), a novel underwater picture 
 enhancement technique that uses a pre-trained architecture termed VGG16 as an encoder. In 
 our method, we add a Convolutional Block Attention Module to the decoder's skip 
@@ -131,3 +132,4 @@ else:
 ## Output from Composite Fusion model without and with enhancement:
 ![image](https://github.com/user-attachments/assets/bfd030ea-8382-4073-a3e3-2a64f2f880a7)
 
+</div>
