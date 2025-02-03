@@ -16,4 +16,24 @@ blocks to recover spatial information lost during downsampling. This integration
 model to effectively utilize the pre-trained weights for extracting high-level semantic 
 features, thereby enhancing overall performance. 
 
+To address the challenges in enhancing 
+underwater images, including overlapping artifacts and low-light quality, we use a holistic 
+attention mechanism. This mechanism combines the Channel Attention 
+Module (CAM) and the Spatial Attention Module (SAM), enabling our model to capture 
+both channel-wise and spatial dependencies. The CAM focuses on enhancing channel-wise 
+feature representations within each feature map. It achieves this by computing attention 
+weights based on global average pooling and global max pooling operations. These attention 
+weights modulate the original features, allowing the model to emphasize informative 
+channels while suppressing less relevant ones. 
+Complementing the CAM, the SAM emphasizes spatial regions of importance within 
+the feature maps. It employs global average pooling and global max pooling to obtain spatial 
+attention weights. These weights are then combined through convolutional operations and 
+applied to the original features, enabling the network to adaptively highlight crucial spatial 
+regions. Given an Intermediate Feature map               
+1D channel attention map                 
+, 
+CBAM sequentially infers a 
+,and a 2D spatial attention map                
+then it can be summarized as, 
+
 ![image](https://github.com/user-attachments/assets/5b26567a-be34-4510-8405-0279f77ff684)
